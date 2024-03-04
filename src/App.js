@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar";
 import {Route, Routes} from "react-router-dom";
 import notFound from "./pages/notFound";
+import Home from "./pages/Home";
 
 function App() {
     const [lightMode,setMode] = useState(true)
@@ -13,7 +14,7 @@ function App() {
             <NavBar lightMode={lightMode} setMode={setMode}/>
             <div className={"container"}>
                 <Routes>
-                    <Route exact path="/" element={<Hero lightMode={lightMode}/>}/>
+                    <Route exact path="/" element={<Home lightMode={lightMode}/>}/>
                     <Route path="/about" element={<About/>}/>
                     <Route path="/projects" element={<Projects/>}/>
                     <Route path='*' element={notFound()}></Route>
