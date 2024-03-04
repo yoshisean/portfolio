@@ -44,10 +44,11 @@ function IntroText() {
     );
 }
 function Fish(props) {
-    const fish = useGLTF('simplefishKeyframes.glb');
+    const fish = useGLTF('bettaComplexKey.glb');
     const group = useRef();
-    const {scene, nodes,materials,animations} = useGLTF("simplefishKeyframes.glb");
+    const {scene, nodes,materials,animations} = useGLTF("bettaComplexKey.glb");
     const {actions} = useAnimations(animations, group);
+    console.log(actions)
     useEffect(() => {
         actions.KeyAction.play()
     });
@@ -80,7 +81,7 @@ function Hero({lightMode}) {
         </div>
     );
 }
-useGLTF.preload("simplefish.glb");
+// useGLTF.preload("simplefish.glb");
 useFont.preload("fonts/Raleway-Black.ttf")
 useFont.preload("fonts/Montserrat-Regular.ttf")
 
