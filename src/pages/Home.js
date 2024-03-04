@@ -8,7 +8,10 @@ function Home({lightMode}) {
                 backgroundColor: lightMode ? "#eeeffe" : "black",
                 color: "hotpink"
             }}>
-                About Me
+                <h1>
+                    I'm a developer focused on creating <br/>
+                    responsive and intuitive designs
+                </h1>
             </section>
         </div>
     )

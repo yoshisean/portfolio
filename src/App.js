@@ -15,8 +15,8 @@ function App() {
             <div className={"container"}>
                 <Routes>
                     <Route exact path="/" element={<Home lightMode={lightMode}/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/projects" element={<Projects/>}/>
+                    <Route path="/about" element={<About lightMode={lightMode}/>}/>
+                    <Route path="/projects" element={<Projects lightMode={lightMode}/>}/>
                     <Route path='*' element={notFound()}></Route>
                 </Routes>
             </div>
