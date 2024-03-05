@@ -11,7 +11,7 @@ function Home({lightMode}) {
             }}>
                 <br/>
                 <h1>
-                    I'm a software engineer studying at the Georgia Institute of Technology
+                    I'm a developer studying at the Georgia Institute of Technology
                 </h1>
             </section>
         </div>
