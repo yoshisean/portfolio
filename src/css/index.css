@@ -17,11 +17,6 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-main{
-  flex: 1;
-  /*flex-grow: 1;*/
-}
-
 @font-face {
   font-family:"Montserrat-Regular";
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
@@ -30,22 +25,42 @@ main{
   font-family:"Raleway-Black";
   src: url("../fonts/Raleway-Black.ttf") format("truetype");
 }
-
-.component {
-  min-height: 100vh;
+@font-face {
+  font-family:"Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family:"Jost";
+  src: url("../fonts/Jost-VariableFont_wght.ttf") format("truetype");
 }
 
+
+main{
+  flex: 1;
+}
+
+p {
+  font-family: Jost, serif;
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 h1 {
   top: 0;
   margin-top: 0;
-  font-family: Montserrat-Regular, serif;
+  font-weight: 500;
+  font-family: Jost, serif;
   font-size: 40px;
   text-align: left;
-  padding-left: 10%;
   padding-right: 10%;
   line-height: 1.6;
   animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+}
+
+h2{
+  font-family: Montserrat-Regular, serif;
+  font-size: 15px;
 }
 
 .hidden{
@@ -70,4 +85,21 @@ h1 {
 
 .social :hover{
   scale: 1.1;
+}
+
+.blob {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: morph 5s linear infinite alternate;
+}
+
+@keyframes morph{
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  33% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  66% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
 }

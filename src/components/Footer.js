@@ -39,7 +39,7 @@ function Footer({lightMode}) {
             <div style={{
                 paddingRight: "2%"
             }}>
-                <p style={{lineHeight:"1.65"}}>&copy; Sean Yoshihara 2024<br/>Software Engineer</p>
+                <h2 style={{lineHeight:"1.65"}}>&copy; Sean Yoshihara 2024<br/>Software Engineer</h2>
             </div>
         </footer>
     );

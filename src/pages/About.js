@@ -8,29 +8,34 @@ function About({lightMode}) {
         <div>
             <section id={'about'} style={{
                 width: "100vw",
-                height: "100vh",
+                minHeight: "100vh",
                 backgroundColor: lightMode ? "#eeeffe" : "black",
                 color: textcolor,
             }}>
-                <div style={{display: "flex"}}>
-                    <h1>
-                        <br/>
-                        ABOUT
-                    </h1>
-                </div>
                 <section style={{
                     backgroundColor: lightMode ? "#eeeffe" : "black",
-                    color: textcolor,
+                    color: textcolor, paddingLeft:"10%"
                 }}>
                     <h1>
-                        I'm a developer studying at the Georgia Institute of Technology
+                        ABOUT<br/>
+                        <div style={{
+                        }}>
+                            Developer and Designer.
+                        </div>
                     </h1>
                     <div style={{
-                        paddingLeft:"10%"
+                        display:"inline-block",
+                        justifyContent: "space-evenly",
+                        verticalAlign: "middle"
                     }}>
-                        <img src={"./assets/profile.JPG"} style={{
-                            width: "25%", borderRadius: "50%"
-                        }}/>
+                        <img src={"./assets/profile.JPG"} className={"blob"} style={{
+                            width: "25%", height: "25%", objectFit: "cover"
+                        }} alt={"profile"}/>
+                        <p>
+                            Hey there, Sean here. I'm passionate about creating responsive and intuitive products.
+                            I'm currently a CS student at the Georgia Institute of Technology but originally based in Chicago, IL.
+                            When I'm not designing you can find me with my cello, in the climbing gym, or watching YouTube.
+                        </p>
                     </div>
                 </section>
                 <br/>
