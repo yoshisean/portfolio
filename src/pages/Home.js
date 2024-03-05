@@ -8,7 +8,8 @@ function Home({lightMode}) {
     return(
         <div style={{
             marginTop:"-5%",
-            position:"fixed"
+            position:"fixed",
+            height: "90%"
         }}>
             <Hero lightMode={lightMode}/>
         </div>

@@ -25,9 +25,13 @@ function About({lightMode}) {
                     <h1>
                         I'm a developer studying at the Georgia Institute of Technology
                     </h1>
-                    <img src={"./assets/profile.JPG"} style={{
-                        width: "20%", paddingLeft: "10%", borderRadius: "50%"
-                    }}/>
+                    <div style={{
+                        paddingLeft:"10%"
+                    }}>
+                        <img src={"./assets/profile.JPG"} style={{
+                            width: "25%", borderRadius: "50%"
+                        }}/>
+                    </div>
                 </section>
                 <br/>
             </section>

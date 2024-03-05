@@ -15,9 +15,11 @@ function App() {
             backgroundColor: lightMode ? "#eeeffe" : "black",
             width: "100vw",
             minHeight:"100vh",
+            scrollbarWidth: "none",
+
         }}>
             <NavBar lightMode={lightMode} setMode={setMode}/>
-            <main className={"noScroll"}>
+            <main>
                 <Routes>
                     <Route exact path="/" element={<Home lightMode={lightMode}/>}/>
                     <Route path="/about" element={<About lightMode={lightMode}/>}/>
