@@ -5,22 +5,18 @@
     z-index: 1;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     backdrop-filter: blur(10px);
     color: hotpink;
     scroll-behavior: smooth;
-    text-align: center;
-    vertical-align: middle;
     border-bottom: 2px solid hotpink;
 }
 
 .nav ul {
-    justify-content: center;
-    text-align: center;
     list-style: none;
     display: inline-flex;
+    vertical-align: middle;
     gap: 20px;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 
 .nav a {
@@ -28,34 +24,26 @@
     text-decoration: none;
     height: 100%;
     display: flex;
+    vertical-align: middle;
     align-items: center;
-    text-align: center;
-    padding: .25rem;
+    text-align: left;
 }
 
 
 .nav li {
+    content: '';
     font-family: Montserrat-Regular, serif;
-    transition: 0.4s;
+    vertical-align: middle;
+    height: 100%;
     /*text-decoration: none;*/
 }
 
 .nav li:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
-    color: white;
+    font-style: italic;
 }
 
-.logo{
-    padding-top: 0;
-    margin-top: 0;
-    height: 100%;
-    padding-left: 10px;
-    font-family: Montserrat-Regular, serif;
-    display: flex;
-    text-align: left;
-    align-items: center;
+.nav li.active {
+    font-style: italic;
+    font-weight: bolder;
 }
 
-.logo :hover {
-
-}

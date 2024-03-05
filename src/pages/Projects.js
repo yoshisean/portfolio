@@ -8,7 +8,7 @@ function Projects({lightMode}) {
         }}>
             <h1>
                 <br/>
-                My Projects
+                PROJECTS
             </h1>
         </section>
     )

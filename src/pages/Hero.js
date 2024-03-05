@@ -44,9 +44,8 @@ function IntroText() {
     );
 }
 function Fish(props) {
-    const fish = useGLTF('simplefishKeyframes.glb');
     const group = useRef();
-    const {scene, nodes,materials,animations} = useGLTF("simplefishKeyframes.glb");
+    const {scene, animations} = useGLTF("simplefishKeyframes.glb");
     const {actions} = useAnimations(animations, group);
     console.log(actions)
     useEffect(() => {
@@ -55,7 +54,7 @@ function Fish(props) {
     return (
         <group ref={group} {...props}>
             <mesh>
-                <primitive object={fish.scene} scale={1.3} rotation={[0,Math.PI,0]}/>
+                <primitive object={scene} scale={1.3} rotation={[0,Math.PI,0]}/>
             </mesh>
         </group>
     )
@@ -63,7 +62,7 @@ function Fish(props) {
 
 function Hero({lightMode}) {
     return (
-        <div className="component" style={{height: "100vh", width: "100vw"}} id={"home"}>
+        <div style={{height: "100vh", width: "100vw"}} id={"home"}>
             <Suspense>
                 <Canvas camera={{position:[0,0,40]}}>
                     <rectAreaLight intensity={Math.PI / 2} position={[0, 0, 10]} width={30}/>

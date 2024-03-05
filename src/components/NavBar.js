@@ -20,10 +20,8 @@ export default function NavBar({lightMode,setMode}) {
     return (
         <nav className="nav" style={{position:"sticky",top:0}}>
             <Container style={{color:textcolor}}>
-                <Link to="/" className="site-title">
-                    <div className="logo">
-                        Sean<br/>Yoshihara
-                    </div>
+                <Link to="/" className={"underline"}>
+                    Sean<br/>Yoshihara
                 </Link>
                 <ul>
                     <div>

@@ -1,22 +1,16 @@
 import Hero from "./Hero";
+import Footer from "../components/Footer";
+import React from "react";
 
 function Home({lightMode}) {
     let textcolor = lightMode? "hotpink":"white"
+
     return(
-        <div>
+        <div style={{
+            marginTop:"-5%",
+            position:"fixed"
+        }}>
             <Hero lightMode={lightMode}/>
-            <section className={"component"} style={{
-                backgroundColor: lightMode ? "#eeeffe" : "black",
-                color: textcolor
-            }}>
-                <br/>
-                <h1>
-                    I'm a developer studying at the Georgia Institute of Technology
-                </h1>
-                <img src={"./assets/profile.JPG"} style={{
-                    width: "30%", paddingLeft:"10%", borderRadius:"50%"
-                }}/>
-            </section>
         </div>
     )
 }
