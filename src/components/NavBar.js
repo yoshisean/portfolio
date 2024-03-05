@@ -2,8 +2,6 @@ import React from "react";
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import styled from "styled-components";
-import Contact from "../pages/Contact";
-import Toggle from "./Toggle";
 
 const Container = styled.div`
     width: 100vw;
@@ -18,10 +16,10 @@ export default function NavBar({lightMode,setMode}) {
             setMode(true)
         }
     }
-
+    let textcolor = lightMode? "hotpink":"white"
     return (
         <nav className="nav" style={{position:"sticky",top:0}}>
-            <Container>
+            <Container style={{color:textcolor}}>
                 <Link to="/" className="site-title">
                     <div className="logo">
                         Sean<br/>Yoshihara
@@ -38,7 +36,7 @@ export default function NavBar({lightMode,setMode}) {
                         checked={!lightMode}
                         onChange={changeMode}
                         size={30}
-                        moonColor={"#db3b86"}
+                        moonColor={"white"}
                         sunColor={"hotpink"}
                     />
                 </ul>
