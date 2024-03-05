@@ -13,6 +13,9 @@ function Home({lightMode}) {
                 <h1>
                     I'm a developer studying at the Georgia Institute of Technology
                 </h1>
+                <img src={"./assets/profile.JPG"} style={{
+                    width: "30%", paddingLeft:"10%", borderRadius:"50%"
+                }}/>
             </section>
         </div>
     )
