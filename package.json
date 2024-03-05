@@ -2,6 +2,7 @@
   "name": "untitled",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yoshisean.github.io",
   "dependencies": {
     "@react-three/drei": "^9.97.6",
     "@react-three/postprocessing": "^2.16.0",
