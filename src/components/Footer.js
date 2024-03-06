@@ -5,8 +5,8 @@ function Footer({lightMode}) {
 
     return (
         <footer style={{
-            bottom: 0,
-            position:"fixed",
+            position: "sticky",
+            top: "100%",
             color:textcolor,
             width:"100vw",
             textAlign: "left",
