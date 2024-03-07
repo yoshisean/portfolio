@@ -47,7 +47,6 @@ function Fish(props) {
     const group = useRef();
     const {scene, animations} = useGLTF("simplefishKeyframes.glb");
     const {actions} = useAnimations(animations, group);
-    console.log(actions)
     useEffect(() => {
         actions.KeyAction.play()
     });

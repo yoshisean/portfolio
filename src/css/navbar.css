@@ -5,9 +5,12 @@
     z-index: 1;
     overflow: hidden;
     display: flex;
+    padding-top: 1%;
     backdrop-filter: blur(10px);
     color: hotpink;
     scroll-behavior: smooth;
+    font-family: Montserrat-Regular, serif;
+    font-weight: 400;
     /*border-bottom: 2px solid hotpink;*/
 }
 
@@ -16,7 +19,7 @@
     display: inline-flex;
     vertical-align: middle;
     gap: 20px;
-    padding-right: 15px;
+
 }
 
 .nav a {
@@ -44,7 +47,6 @@
 }
 
 .nav li.active {
-    /*font-style: italic;*/
     font-style: normal;
     font-weight: bolder;
     text-decoration: underline;

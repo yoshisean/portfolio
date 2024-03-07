@@ -13,7 +13,7 @@ function App() {
     return (
         <div style={{
             backgroundColor: lightMode ? "#eeeffe" : "black",
-            width: "100vw",
+            minWidth: "100vw",
             minHeight:"100vh",
             scrollbarWidth: "none",
 

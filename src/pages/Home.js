@@ -9,7 +9,7 @@ function Home({lightMode}) {
         <div style={{
             marginTop:"-5%",
             position:"fixed",
-            height: "90%"
+            width:"100vw"
         }}>
             <Hero lightMode={lightMode}/>
         </div>

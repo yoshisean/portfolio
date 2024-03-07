@@ -20,10 +20,12 @@ export default function NavBar({lightMode,setMode}) {
     return (
         <nav className="nav" style={{position:"sticky",top:0}}>
             <Container style={{color:textcolor}}>
-                <Link to="/" className={"underline"}>
+                <Link to="/" style={{paddingLeft:"2%"}} className={""}>
                     SEAN<br/>YOSHIHARA
                 </Link>
-                <ul>
+                <ul style={{
+                    paddingRight:"2%"
+                }}>
                     <div>
                         <CustomLink to="/works">WORKS</CustomLink>
                     </div>
@@ -39,7 +41,7 @@ export default function NavBar({lightMode,setMode}) {
                             sunColor={"black"}
                             style={{
                                 height: "22px",
-                                width: "22px"
+                                width: "22px",
                             }}
                         />
                     </div>
