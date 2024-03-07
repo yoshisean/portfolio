@@ -20,11 +20,18 @@ export default function NavBar({lightMode,setMode}) {
     return (
         <nav className="nav" style={{position:"sticky",top:0}}>
             <Container style={{color:textcolor}}>
-                <Link to="/" style={{paddingLeft:"2%"}} className={""}>
-                    SEAN<br/>YOSHIHARA
+                <Link to="/" style={{
+                    paddingLeft:"2%",
+                }}>
+                    <div style={{
+                        width:"100%"
+                    }}>
+                        SEAN<br/>YOSHIHARA
+                    </div>
                 </Link>
                 <ul style={{
-                    paddingRight:"2%"
+                    paddingRight:"2%",
+                    maxWidth:"50vw"
                 }}>
                     <div>
                         <CustomLink to="/works">WORKS</CustomLink>

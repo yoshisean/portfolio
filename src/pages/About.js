@@ -29,7 +29,7 @@ function About({lightMode}) {
                         justifyContent: "space-evenly",
                         verticalAlign: "middle"
                     }}>
-                        <img src={"./assets/profile.JPG"} className={"blob"} style={{
+                        <img src={"./assets/profile.JPG"}  style={{
                             width: "25%", height: "25%", objectFit: "cover"
                         }} alt={"profile"}/>
                         <p style={{
