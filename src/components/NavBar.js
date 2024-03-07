@@ -16,27 +16,34 @@ export default function NavBar({lightMode,setMode}) {
             setMode(true)
         }
     }
-    let textcolor = lightMode? "hotpink":"white"
+    let textcolor = lightMode? "black":"white"
     return (
         <nav className="nav" style={{position:"sticky",top:0}}>
             <Container style={{color:textcolor}}>
                 <Link to="/" className={"underline"}>
-                    Sean<br/>Yoshihara
+                    SEAN<br/>YOSHIHARA
                 </Link>
                 <ul>
                     <div>
-                        <CustomLink to="/projects">Projects</CustomLink>
+                        <CustomLink to="/works">WORKS</CustomLink>
                     </div>
                     <div>
-                        <CustomLink to="/about">About</CustomLink>
+                        <CustomLink to="/about">ABOUT</CustomLink>
                     </div>
-                    <DarkModeSwitch
-                        checked={!lightMode}
-                        onChange={changeMode}
-                        size={30}
-                        moonColor={"white"}
-                        sunColor={"hotpink"}
-                    />
+                    <div>
+                        <DarkModeSwitch
+                            checked={!lightMode}
+                            onChange={changeMode}
+                            size={30}
+                            moonColor={"white"}
+                            sunColor={"black"}
+                            style={{
+                                height: "22px",
+                                width: "22px"
+                            }}
+                        />
+                    </div>
+
                 </ul>
 
             </Container>

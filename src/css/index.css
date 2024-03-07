@@ -41,15 +41,16 @@ main{
 
 p {
   font-family: Jost, serif;
-  font-size: 30px;
+  font-size: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  line-height: 1.6;
 }
 
 h1 {
   top: 0;
   margin-top: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-family: Jost, serif;
   font-size: 40px;
   text-align: left;
@@ -59,7 +60,8 @@ h1 {
 }
 
 h2{
-  font-family: Montserrat-Regular, serif;
+  font-family: Jost, serif;
+  font-weight: 400;
   font-size: 15px;
 }
 

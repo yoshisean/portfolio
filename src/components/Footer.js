@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 
 function Footer({lightMode}) {
-    let textcolor = lightMode? "hotpink":"white"
+    let textcolor = lightMode? "black":"white"
 
     return (
         <footer style={{
             position: "sticky",
             top: "100%",
+            paddingTop: "5px",
             color:textcolor,
             width:"100vw",
             textAlign: "left",
@@ -17,7 +18,8 @@ function Footer({lightMode}) {
         }}>
             <div style={{
                 display: "flex",
-                paddingLeft: "2%"
+                paddingLeft: "2%",
+                maxWidth:"30vw"
             }}>
                 <a href={"https://github.com/yoshisean"} target="_blank" rel="noopener noreferrer" className={"social"}>
                     <img src={lightMode ? "./socials/GitHub/github-mark.png" :

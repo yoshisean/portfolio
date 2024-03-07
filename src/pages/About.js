@@ -3,18 +3,17 @@ import Footer from "../components/Footer";
 import React from "react";
 
 function About({lightMode}) {
-    let textcolor = lightMode? "hotpink":"white"
+    let textcolor = lightMode? "black":"white"
     return(
         <div>
             <section id={'about'} style={{
                 width: "100vw",
-                minHeight: "100vh",
                 backgroundColor: lightMode ? "#eeeffe" : "black",
                 color: textcolor,
             }}>
                 <section style={{
                     backgroundColor: lightMode ? "#eeeffe" : "black",
-                    color: textcolor, paddingLeft:"10%"
+                    color: textcolor, paddingLeft:"5%", paddingRight:"5%"
                 }}>
                     <h1>
                         ABOUT<br/>

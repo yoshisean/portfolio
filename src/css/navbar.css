@@ -8,7 +8,7 @@
     backdrop-filter: blur(10px);
     color: hotpink;
     scroll-behavior: smooth;
-    border-bottom: 2px solid hotpink;
+    /*border-bottom: 2px solid hotpink;*/
 }
 
 .nav ul {
@@ -40,10 +40,14 @@
 
 .nav li:hover {
     font-style: italic;
+
 }
 
 .nav li.active {
-    font-style: italic;
+    /*font-style: italic;*/
+    font-style: normal;
     font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 

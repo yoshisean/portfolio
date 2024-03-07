@@ -23,7 +23,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home lightMode={lightMode}/>}/>
                     <Route path="/about" element={<About lightMode={lightMode}/>}/>
-                    <Route path="/projects" element={<Projects lightMode={lightMode}/>}/>
+                    <Route path="/works" element={<Projects lightMode={lightMode}/>}/>
                     <Route path='*' element={notFound()}></Route>
                 </Routes>
             </main>
