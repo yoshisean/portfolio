@@ -7,7 +7,8 @@ function About({lightMode}) {
     return(
         <div>
             <section id={'about'} style={{
-                width: "100vw",
+                maxWidth: "100vw",
+                width:"fit-content",
                 backgroundColor: lightMode ? "#eeeffe" : "black",
                 color: textcolor,
             }}>
@@ -25,20 +26,30 @@ function About({lightMode}) {
                         </div>
                     </h1>
                     <div style={{
-                        display:"flex",
+                        display: "flex",
                         justifyContent: "space-evenly",
                         verticalAlign: "middle"
                     }}>
-                        <img src={"./assets/profile.JPG"}  style={{
-                            width: "25%", height: "25%", objectFit: "cover"
-                        }} alt={"profile"}/>
-                        <p style={{
-                            paddingLeft:"1%"
-                        }}>
-                            Hey there, Sean here. I'm passionate about creating responsive and intuitive products.
-                            I'm currently a CS student at the Georgia Institute of Technology but originally based in Chicago, IL.
+                        <p>
+                            Hey there, Sean here. I'm currently a student at the Georgia Institute
+                            of Technology but originally based in Chicago, IL. I'm pursuing a CS degree with
+                            concentrations in AI/ML application development and math. These don't exactly scream
+                            "creative" or "user friendly", but I've been enjoying working on difficult problems
+                            that require a good understanding of algorithm and system design. Outside of classes,
+                            I love building unique products (especially websites!) that prioritize ease of use.
+                            <br/><br/>
+                            I've been coding since my freshman year of high school, and since then I've gained
+                            a significant amount of experience in software development. Over the summer I had a
+                            chance to work on a startup along with a few friends. Although it didn't work out, I learned
+                            a ton about the business side of client interactions and finding product market fit. I definitely
+                            want to try again with a different startup in the future.
+                            <br/><br/>
                             When I'm not designing you can find me with my cello, in the climbing gym, or watching YouTube.
+                            Hope you found my website interesting, because I had a lot of fun building it. -Sean
                         </p>
+                        <img src={"./assets/profile.JPG"} style={{
+                            width: "30vw", height: "30vw", objectFit: "cover"
+                        }} alt={"profile"}/>
                     </div>
                 </section>
                 <br/>

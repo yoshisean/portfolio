@@ -16,7 +16,6 @@ function App() {
             minWidth: "100vw",
             minHeight:"100vh",
             scrollbarWidth: "none",
-
         }}>
             <NavBar lightMode={lightMode} setMode={setMode}/>
             <main>

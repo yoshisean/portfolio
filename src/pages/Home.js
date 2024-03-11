@@ -1,5 +1,4 @@
 import Hero from "./Hero";
-import Footer from "../components/Footer";
 import React from "react";
 
 function Home({lightMode}) {
