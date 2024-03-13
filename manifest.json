@@ -3,12 +3,12 @@
   "name": "Developer Portfolio with React",
   "icons": [
     {
-      "src": "templogo512.ico",
+      "src": "./assets/templogo512.ico",
       "sizes": "512x512",
       "type": "image/x-icon"
     },
     {
-      "src": "templogo512.png",
+      "src": "./assets/templogo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
