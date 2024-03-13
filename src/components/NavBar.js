@@ -33,13 +33,13 @@ export default function NavBar({lightMode,setMode}) {
                     paddingRight:"2%",
                     maxWidth:"50vw"
                 }}>
-                    <div>
+                    <li>
                         <CustomLink to="/works">WORKS</CustomLink>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <CustomLink to="/about">ABOUT</CustomLink>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <DarkModeSwitch
                             checked={!lightMode}
                             onChange={changeMode}
@@ -51,8 +51,7 @@ export default function NavBar({lightMode,setMode}) {
                                 width: "22px",
                             }}
                         />
-                    </div>
-
+                    </li>
                 </ul>
 
             </Container>

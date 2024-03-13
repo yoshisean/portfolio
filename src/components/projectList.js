@@ -13,7 +13,8 @@ const projects = [
             "to improve frame count. The mouse follow interaction is dictated by basic camera controls. I opted " +
             "not to overcomplicate things and stick with a simple layout, font, and color palette.",
         image:"./assets/portfolioSite.png",
-        year:"2024"
+        year:"2024",
+        link:"https://yoshisean.github.io/"
     },
     {
         key:1,
@@ -26,23 +27,25 @@ const projects = [
             "related to CS or robotics. As a side goal, mobile integration leaves much to be desired. Definitely" +
             " something I'll fix up when I have time. ",
         image:"./assets/algovisSite.png",
-        year:"2024"
+        year:"2024",
+        link:"https://trollsinc.github.io/"
     },
     {
         key:2,
         name: 'Point Drift',
         description: "While I was studying abroad in Berlin over the summer, I co-founded an AI coding startup with" +
-            " a few friends. We were working on techniques to allow for AI coding assistants to make decisions that were " +
+            " a few friends. We were working on techniques that enable AI coding assistants to make decisions that were " +
             "tailored to specific codebases. Important to note that crazy context windows like Gemini with 1 million+ tokens were" +
             " not yet a thing at that point in time. Alongside the usual customer discovery and product market fit evaluation," +
             " I was tasked with building a basic company homepage. This was built in around 3 days so I was especially happy with how " +
             "it turned out. I recently updated the site to be more mobile friendly, but the original look has been maintained.",
         image:"./assets/pointdriftSite.png",
-        year:"2023"
+        year:"2023",
+        link:"https://pointdrift.com/"
     },
 ]
-function ProjectList(lightMode) {
-    let borderColor= lightMode ? "black":"white"
+function ProjectList({lightMode}) {
+    let textcolor = lightMode? "black":"white"
     const pList = projects.map(project =>
         <li style={{
             listStyleType:"none",
@@ -66,12 +69,24 @@ function ProjectList(lightMode) {
                             backgroundClip:"border-box"
                     }}
                     />
-                    <p style={{ paddingLeft:"1vw",paddingRight: "2vw",marginRight:"2vw",
-                    float:"left",display:"inline-block"}}>
+                    <p style={{
+                        paddingLeft: "1vw", paddingRight: "2vw", marginRight: "2vw",
+                        float: "left", display: "inline-block"
+                    }}>
                         {project.description}
-                        <p style={{fontWeight:"bold"}}>
-                            {project.year}
-                        </p>
+                        <div style={{
+                            display:"flex", verticalAlign:"middle",alignItems:"center"
+                        }}>
+                            <p style={{fontWeight: "bold"}}>
+                                {project.year}
+                            </p>
+                            <pre>...</pre>
+                            <a href={project.link} target="_blank"
+                               rel="noopener noreferrer" style={{color:textcolor,textDecoration:"underline"}}
+                                className={"social"}>
+                                <h2>Visit</h2>
+                            </a>
+                        </div>
                     </p>
                 </div>
             </div>

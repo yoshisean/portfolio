@@ -62,7 +62,7 @@ function Fish(props) {
 function Hero({lightMode}) {
     return (
         <div style={{height: "100vh", width: "100vw"}} id={"home"}>
-            <Suspense>
+            <Suspense fallback={null}>
                 <Canvas camera={{position:[0,0,40]}}>
                     <rectAreaLight intensity={Math.PI / 2} position={[0, 0, 10]} width={30}/>
                     <Environment preset="sunset" background blur={0.5}/>
