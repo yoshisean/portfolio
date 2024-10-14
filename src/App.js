@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 
 function App() {
-    const [lightMode,setMode] = useState(true)
+    const [lightMode,setMode] = useState(false)
     return (
         <div style={{
             backgroundColor: lightMode ? "#eeeffe" : "black",
