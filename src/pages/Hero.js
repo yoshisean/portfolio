@@ -59,10 +59,30 @@ function Fish(props) {
     )
 }
 
+function LoadingScreen({lightMode}) {
+    return (
+        <div style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: lightMode ? "#eeeffe" : "#000000",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 9999
+        }}>
+            <div className="spinner"></div>
+            <div>Loading...</div>
+        </div>
+    );
+}
+
 function Hero({lightMode}) {
     return (
         <div style={{height: "100vh", width: "100vw"}} id={"home"}>
-            <Suspense fallback={null}>
+            <Suspense fallback={<LoadingScreen lightMode={lightMode} />}>
                 <Canvas camera={{position:[0,0,40]}}>
                     <rectAreaLight intensity={Math.PI / 2} position={[0, 0, 10]} width={30}/>
                     <Environment preset="sunset" background blur={0.5}/>
@@ -73,9 +93,6 @@ function Hero({lightMode}) {
                     </EffectComposer>
                     <Fish/>
                     <SoftShadows></SoftShadows>
-                    {/*<Stats/>*/}
-                    {/*<OrbitControls/>*/}
-                    {/*<CameraPositionLogger event='mousedown'></CameraPositionLogger>*/}
                 </Canvas>
             </Suspense>
         </div>
