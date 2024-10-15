@@ -67,7 +67,7 @@ function LoadingScreen({lightMode}) {
             left: 0,
             width: "100%",
             height: "100%",
-            background: lightMode ? "#eeeffe" : "#000000",
+            background: lightMode ? "#000000" : "#eeeffe",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
